@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 60px 20px;
+    text-align: center; 
+    background-image: url('../Recursos/Backgrounds/Wallpaper2.png'); 
+    background-repeat: no-repeat;
+    background-position: center bottom; /* Centrado horizontalmente y alineado arriba */
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px rgba(189, 236, 255, 0.4); 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 4px dotted #ffffff00;
+    height: 0;                   
+}
+
+.pie-pagina {
+    font-size: 0.9em;
+    color: rgb(189, 236, 255);
+    text-shadow: 0px 0px 4px rgba(189, 236, 255, 0.4); 
+    text-align: center;
+    display: block;
+    clear: both; 
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 15px 25px; 
+    text-decoration: none;
+    color: #fff;
+    vertical-align: top; 
+}
+
+.menu-item img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 12px auto; 
+}
+
+.menu-item span {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px rgba(189, 236, 255, 0.4); 
+}
+
+/* 1. ESTILO BASE PARA LOS DOS RECUADROS BLANCOS */
+aside.sidebar, 
+article.main-article {
+    display: block;                  /* Se comportan como bloques independientes */
+    background-color: rgba(255, 255, 255, 0.96); /* Fondo blanco limpio */
+    max-width: 800px;                /* Ancho máximo de los recuadros */
+    margin: 40px auto;               /* "auto" a los lados los centra perfectamente */
+    padding: 40px;                   /* Espaciado interno */
+    border-radius: 12px;             /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(246, 252, 255, 0.096); /* Sombra para dar relieve */
+    box-sizing: border-box;          /* Evita que el padding altere el ancho */
+}
+
+/* 2. CONFIGURACIÓN DEL ÍNDICE */
+aside.sidebar h2 {
+    margin-top: 0;
+    color: rgb(0, 128, 255);
+    font-size: 26px;
+}
+
+/* Truco clave: hace que la lista ocupe solo lo necesario para centrarse, 
+   pero mantiene los números pegados al texto alineados a la izquierda */
+aside.sidebar ol {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+aside.sidebar li {
+    margin: 12px 0;
+    font-size: 1.1em;
+}
+
+aside.sidebar a {
+    color: #1a62b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* 3. CONFIGURACIÓN DE LOS CAPÍTULOS (DE IZQUIERDA A DERECHA) */
+article.main-article {
+    text-align: left;                /* Todo el contenido fluye de izquierda a derecha */
+}
+
+article.main-article h2 {
+    text-align: center;              /* Mantiene solo el título central "CAPÍTULOS" centrado */
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1a62b8;
+    font-size: 26px;
+}
+
+/* Bloques individuales para cada capítulo */
+.post {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 5px solid #4a90e2;  /* Línea decorativa azul a la izquierda */
+}
+
+.post h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.post p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.05em;
+    white-space: pre-line;           /* Respeta los saltos de línea de tus diálogos */
+}
+
+aside.sidebar a[href="#CAP1"]{
+    color:crimson;
+}
+aside.sidebar a[href="#CAP2"]{
+    color:tomato;
+}
+aside.sidebar a[href="#CAP3"]{
+    color:goldenrod;
+}
+aside.sidebar a[href="#CAP4"]{
+    color:yellowgreen;
+}
+aside.sidebar a[href="#CAP5"]{
+    color:deepskyblue;
+}
+aside.sidebar a[href="#CAP6"]{
+    color:midnightblue;
+}
+aside.sidebar a[href="#CAP7"]{
+    color:indigo;
+}
+
+.post h3[id="CAP1"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:crimson;
+}
+
+.post h3[id="CAP2"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:tomato;
+}
+
+.post h3[id="CAP3"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:goldenrod;
+}
+
+.post h3[id="CAP4"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:yellowgreen;
+}
+
+.post h3[id="CAP5"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:deepskyblue;
+}
+
+.post h3[id="CAP6"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:midnightblue;
+}
+
+.post h3[id="CAP7"] {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color:indigo;
+}

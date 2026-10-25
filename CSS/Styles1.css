@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 60px 20px;
+    text-align: center; 
+    background-image: url('../Recursos/Backgrounds/Wallpaper1.png'); 
+    background-repeat: no-repeat;
+    background-position: center bottom; /* Centrado horizontalmente y alineado arriba */
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px rgba(189, 236, 255, 0.4); 
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 15px 25px; 
+    text-decoration: none;
+    color: #fff;
+    vertical-align: top; 
+}
+
+.menu-item img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 12px auto; 
+}
+
+.menu-item span {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px rgba(189, 236, 255, 0.4); 
+}
+
+hr {
+    border: none;
+    border-top: 4px dotted #ffffff00;
+    height: 0;                   
+}
+
+.pie-pagina {
+    font-size: 0.9em;
+    color: rgb(189, 236, 255);
+    text-shadow: 0px 0px 4px rgba(189, 236, 255, 0.4); 
+    text-align: center;
+    display: block;
+    clear: both; 
+    margin-top: 50vh;
+    margin-bottom: 5px;
+}
+
+/* El fondo que cubre toda la pantalla */
+.tarjeta-oculta {
+    display: none; /* Empieza oculta por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 10, 14, 0.6);
+}
+
+/* EL TRUCO: Cuando la tarjeta es el objetivo activo en la URL, se MUESTRA */
+.tarjeta-oculta:target {
+    display: block;
+}
+
+/* La cajita blanca del centro */
+.contenido-tarjeta {
+    background-color: #fff;
+    color: #333;
+    width: 90%;
+    max-width: 600px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(32, 23, 56, 0.3);
+    box-sizing:border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+/* 2. Fuerza a la tabla a adaptarse al ancho del contenedor */
+.contenido-tarjeta table {
+    table-layout: fixed;   /* Clave: obliga a las columnas a repartirse el espacio equitativamente */
+    width: 100%;           /* Ocupa el 100% de "contenido-tarjeta" */
+    border-collapse: collapse;
+}
+
+/* Botón de cerrar (etiqueta <a> diseñada como botón) */
+.boton-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #0fa3ff;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+/*Tarjeta de pingu*/
+
+.zona-perfil {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.foto-redonda {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    outline: 3px solid #ffffff71;
+    object-fit: cover;
+}
+
+.h2CCC{
+    color:#8bb600;
+}
+
+.h2F00{
+    color: #333;
+}
+
+.h28CE{
+    color: #4f9ccf;
+}
+
+.h2E52{
+    color: #8a52cf;
+}
+
+
+/* Estilos base de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 0;
+}
+
+/* 3. Controla las celdas para que el texto salte de línea y no se desborde */
+th, td {
+    width: 33.33%;         /* Divide el espacio en 3 partes iguales */
+    border: 5px solid #ffffff;
+    padding: 12px 15px;
+    text-align: left;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Rompe el texto en varias líneas si es muy largo */
+    overflow-wrap: break-word;
+}
+
+.thCCC {
+    background-color: #828282;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tdCCC {
+    color:#8bb600;
+    background-color:#dbdbdb;
+}
+
+.thF00 {
+    background-color: #ff825c;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tdF00 {
+    color:#ffa083;
+    background-color:#ffd4c7;
+}
+
+.th8CE {
+    background-color: #3d75b4;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.td8CE {
+    color:#4f9ccf;
+    background-color:#e0f3ff;
+}
+
+.thE52 {
+    background-color: #eb7f3c;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tdE52 {
+    color:#8a52cf;
+    background-color:#fff5c7;
+}

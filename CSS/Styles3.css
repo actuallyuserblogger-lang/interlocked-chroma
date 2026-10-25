@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 60px 20px;
+    text-align: center; 
+    background-image: url('../Recursos/Backgrounds/Wallpaper2.png'); 
+    background-repeat: no-repeat;
+    background-position: center bottom; /* Centrado horizontalmente y alineado arriba */
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px rgba(189, 236, 255, 0.4); 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 4px dotted #ffffff00;
+    height: 0;                   
+}
+
+.pie-pagina {
+    font-size: 0.9em;
+    color: rgb(189, 236, 255);
+    text-shadow: 0px 0px 4px rgba(189, 236, 255, 0.4); 
+    text-align: center;
+    display: block;
+    clear: both; 
+    margin-top: 50vh;
+    margin-bottom: 5px;
+}
+
+/* 1. Convierte el contenedor en un contenedor Flexbox flexible */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 15px;             /* Reemplaza los márgenes manuales creando un espacio uniforme */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 2. Imágenes adaptables */
+img {
+    width: 100%;           /* Ocupa el 100% de su contenedor original */
+    max-width: 350px;      /* Tamaño máximo en computadoras (ajusta este valor a tu gusto) */
+    height: auto;          /* Mantiene la proporción para que no se deforme */
+    display: block;        /* Elimina espacios fantasmas inferiores */
+    border-radius: 15px;   /* Conserva tus bordes redondeados */
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 15px 25px; 
+    text-decoration: none;
+    color: #fff;
+    vertical-align: top; 
+}
+
+.menu-item img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 12px auto; 
+}
